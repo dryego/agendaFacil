@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const express = require('express');
-const cadastro = require('../controller/cliente/cadastroCliente');
+const cadastroCliente = require('../controller/cliente/cadastro');
 
 const rotas = express.Router();
 
-rotas.get('/cadastro', cadastro);
+rotas.post('/cadastro', cadastroCliente);
 
 module.exports = rotas;

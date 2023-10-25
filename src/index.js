@@ -1,10 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 require('dotenv').config();
 const express = require('express');
-const rotaTeste = require('./router/rotaTeste');
-const rotasCliente = require('./router/rotasCliente');
 
 const app = express();
+
+const rotaTeste = require('./router/rotaTeste');
+const rotasCliente = require('./router/rotasCliente');
 
 app.use(express.json());
 
